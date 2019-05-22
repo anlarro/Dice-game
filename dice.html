@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dice-game</title>
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>Choose values and play...</h1>
+
+      <div class="container">
+        <div class="row">
+          <div class="col col-sm-4 col-6">
+            <img class="die1" src="images/dice6.png">
+          </div>
+          <div class="col col-sm-4 col-6">
+            <img class="die2" src="images/dice6.png">
+          </div>
+          <div class="col col-sm-4 col-6">
+            <img class="die3" src="images/dice6.png">
+          </div>
+          <div class="col col-sm-4 col-6">
+            <img class="die4" src="images/dice6.png">
+          </div>
+          <div class="col col-sm-4 col-6">
+            <img class="die5" src="images/dice6.png">
+          </div>
+          <div class="col col-sm-4 col-6">
+              <div>
+                <p>Choose values...</p>
+              </div>
+              <div class="dropdown">
+                <button class="chooseValues btn btn-outline-light btn-large dropdown-toggle" type="button" data-toggle="dropdown">Dice Value: <span class="diceValue"> 1 </span><span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="javascript:chooseDiceValue(1)">1</a></li>
+                  <li><a href="javascript:chooseDiceValue(2)">2</a></li>
+                  <li><a href="javascript:chooseDiceValue(3)">3</a></li>
+                  <li><a href="javascript:chooseDiceValue(4)">4</a></li>
+                  <li><a href="javascript:chooseDiceValue(5)">5</a></li>
+                  <li><a href="javascript:chooseDiceValue(6)">6</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="chooseValues btn btn-outline-light btn-large dropdown-toggle" type="button" data-toggle="dropdown">Quantity :  <span class="diceQuantity"> 1 </span><span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="javascript:chooseDiceQuantity(1)">1</a></li>
+                  <li><a href="javascript:chooseDiceQuantity(2)">2</a></li>
+                  <li><a href="javascript:chooseDiceQuantity(3)">3</a></li>
+                  <li><a href="javascript:chooseDiceQuantity(4)">4</a></li>
+                  <li><a href="javascript:chooseDiceQuantity(5)">5</a></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+        <button type="button" class="play btn btn-success btn-lg btn-block" onclick = "rollDice()">Play</button>
+      </div>
+
+    </div>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- My Scripts -->
+    <script src="index.js" charset="utf-8" defer></script>
+  </body>
+
+  <footer>
+    <a class="myLink" href="https://anlarro.github.io/my-personal-site/" target="_blank">https://anlarro.github.io/my-personal-site/</a>
+  </footer>
+</html>
